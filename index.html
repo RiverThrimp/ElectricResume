@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Feng Qiang (冯强) - Senior Frontend Engineer with 9 years of experience in React, TypeScript, and AI application frontend development.">
+  <meta name="keywords" content="Frontend Engineer, React, TypeScript, AI Frontend, SSE, WebSocket, Component Library, Design System">
+  <meta name="author" content="Feng Qiang">
+  <meta property="og:title" content="Feng Qiang - Senior Frontend Engineer">
+  <meta property="og:description" content="9 years building AI-powered frontend applications, design systems, and developer tools.">
+  <meta property="og:type" content="website">
+  <title>Feng Qiang — Senior Frontend Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>FQ<span class="logo-bracket">/&gt;</span>
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="status-dot"></span>
+        Open to new opportunities
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Feng Qiang</span>
+      </h1>
+      <p class="hero-subtitle">
+        Senior Frontend Engineer crafting <span class="highlight">AI-powered applications</span>,
+        <span class="highlight">design systems</span>, and
+        <span class="highlight">developer tools</span>.
+      </p>
+      <p class="hero-meta">
+        9 years experience &middot; React &middot; TypeScript &middot; Next.js &middot;
+        AI Frontend &middot; Beijing, China &middot; Open to Remote
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          View Projects
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="https://github.com/RiverThrimp" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/fengqiang" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a senior frontend engineer with <strong>9 years of experience</strong> building production-grade
+            web applications. My core expertise lies in <strong>React + TypeScript</strong> ecosystem,
+            with a strong focus on <strong>AI application frontend</strong>, <strong>design systems</strong>,
+            and <strong>developer tools</strong>.
+          </p>
+          <p>
+            Over the years, I've architected streaming AI chat interfaces with SSE/WebSocket,
+            built enterprise component libraries consumed by 10+ teams, designed developer-facing
+            data consoles, and led frontend engineering practices including CI/CD pipelines,
+            performance monitoring, and Docker/K8s deployment.
+          </p>
+          <p>
+            I'm passionate about <strong>composable architectures</strong>, <strong>developer experience</strong>,
+            and turning complex business requirements into clean, maintainable code. Currently exploring
+            opportunities in AI frontend, developer tools, and platform engineering — open to both
+            China-based and remote roles with reasonable timezone overlap.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-num" data-count="9">9</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-count="50">50+</div>
+            <div class="stat-label">Components Built</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-count="10">10+</div>
+            <div class="stat-label">Teams Enabled</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-count="3">3</div>
+            <div class="stat-label">AI Products Shipped</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+            </svg>
+            <h3>Core Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-primary">React</span>
+            <span class="tag tag-primary">TypeScript</span>
+            <span class="tag tag-primary">Next.js</span>
+            <span class="tag">Vue 3</span>
+            <span class="tag">JavaScript (ES6+)</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3 / Sass</span>
+            <span class="tag">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+            </svg>
+            <h3>AI Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-accent">SSE Streaming</span>
+            <span class="tag tag-accent">WebSocket</span>
+            <span class="tag tag-accent">LLM API Integration</span>
+            <span class="tag">Streaming Render</span>
+            <span class="tag">Markdown Rendering</span>
+            <span class="tag">Multi-turn Dialogue</span>
+            <span class="tag">MCP Protocol</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+              <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+            </svg>
+            <h3>Architecture & Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Component Library Design</span>
+            <span class="tag">Design Systems</span>
+            <span class="tag">State Management</span>
+            <span class="tag">Webpack / Vite</span>
+            <span class="tag">Storybook</span>
+            <span class="tag">Monorepo</span>
+            <span class="tag">Micro-frontend</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/>
+            </svg>
+            <h3>DevOps & Engineering</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">CI/CD (GitLab)</span>
+            <span class="tag">Frontend Monitoring</span>
+            <span class="tag">Performance Optimization</span>
+            <span class="tag">Git / Code Review</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">
+          Selected work showcasing my expertise in AI frontend, design systems, and developer tools.
+          <em>Note: Project descriptions highlight architecture and my contributions — source code is proprietary.</em>
+        </p>
+      </div>
+
+      <!-- Project 1: AI Conversational Platform -->
+      <div class="project-card" data-category="ai">
+        <div class="project-header">
+          <div class="project-tag tag-accent">AI Frontend</div>
+          <div class="project-tag">Production</div>
+        </div>
+        <h3 class="project-title">AI Conversational Platform</h3>
+        <p class="project-role">Frontend Lead &middot; React &middot; TypeScript &middot; SSE &middot; WebSocket</p>
+        <div class="project-body">
+          <div class="project-desc">
+            <h4>Background</h4>
+            <p>
+              An enterprise-grade AI assistant platform supporting multi-turn conversations,
+              real-time streaming responses, and context-aware retrieval. Designed to handle
+              high-concurrency scenarios with sub-second first-token latency.
+            </p>
+            <h4>Key Contributions</h4>
+            <ul>
+              <li>Architected <strong>SSE-based streaming response pipeline</strong> with typewriter effect,
+                  supporting mid-stream interruption and regeneration</li>
+              <li>Designed a <strong>composable message processing hook</strong> handling multi-turn context,
+                  tool-call rendering, and mixed content (text + code + charts)</li>
+              <li>Implemented <strong>WebSocket-based real-time collaboration</strong> for shared AI sessions
+                  with conflict-free state synchronization</li>
+              <li>Built <strong>virtual scrolling message list</strong> supporting 10,000+ messages
+                  without performance degradation</li>
+              <li>Integrated <strong>multiple LLM providers</strong> (OpenAI, Claude, domestic models)
+                  behind a unified adapter interface</li>
+            </ul>
+            <h4>Impact</h4>
+            <div class="project-metrics">
+              <div class="metric"><strong>&lt;800ms</strong><span>First token latency</span></div>
+              <div class="metric"><strong>10K+</strong><span>Concurrent sessions</span></div>
+              <div class="metric"><strong>60%</strong><span>Bundle size reduction</span></div>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="diagram diagram-chat">
+              <div class="diagram-label">Streaming Architecture</div>
+              <div class="diagram-flow">
+                <div class="flow-node">User Input</div>
+                <div class="flow-arrow">&rarr;</div>
+                <div class="flow-node flow-highlight">SSE Connection</div>
+                <div class="flow-arrow">&rarr;</div>
+                <div class="flow-node">Stream Parser</div>
+                <div class="flow-arrow">&rarr;</div>
+                <div class="flow-node flow-highlight">Render Queue</div>
+                <div class="flow-arrow">&rarr;</div>
+                <div class="flow-node">Typewriter UI</div>
+              </div>
+              <div class="diagram-label diagram-sub">Supports: interrupt &middot; regenerate &middot; multi-turn context</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Component Library -->
+      <div class="project-card" data-category="design-system">
+        <div class="project-header">
+          <div class="project-tag tag-primary">Design System</div>
+          <div class="project-tag">Open Source (Internal)</div>
+        </div>
+        <h3 class="project-title">Enterprise Component Library & Design System</h3>
+        <p class="project-role">Creator & Maintainer &middot; React &middot; TypeScript &middot; Storybook</p>
+        <div class="project-body">
+          <div class="project-desc">
+            <h4>Background</h4>
+            <p>
+              A composable component library serving as the foundation for 10+ internal projects.
+              Includes 50+ UI and business components, design tokens, documentation, and an
+              automated release pipeline via internal npm registry.
+            </p>
+            <h4>Key Contributions</h4>
+            <ul>
+              <li>Designed <strong>composable component API</strong> using TypeScript generics and
+                  compound component patterns for maximum flexibility</li>
+              <li>Established <strong>design token system</strong> — color, spacing, typography, shadows —
+                  with dark/light theme support via CSS variables</li>
+              <li>Built <strong>headless component primitives</strong> (unstyled logic layer) enabling
+                  teams to apply custom styling while sharing behavior</li>
+              <li>Created <strong>automated changelog and semver release</strong> pipeline with
+                  Changesets, reducing release overhead by 80%</li>
+              <li>Wrote comprehensive <strong>Storybook documentation</strong> with interactive examples,
+                  accessibility checks, and visual regression testing</li>
+            </ul>
+            <h4>Impact</h4>
+            <div class="project-metrics">
+              <div class="metric"><strong>50+</strong><span>Components</span></div>
+              <div class="metric"><strong>10+</strong><span>Teams consuming</span></div>
+              <div class="metric"><strong>~40%</strong><span>Faster feature delivery</span></div>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="diagram diagram-components">
+              <div class="diagram-label">Composable Architecture</div>
+              <div class="comp-layers">
+                <div class="comp-layer comp-layer-top">Design Tokens (Color, Spacing, Typography)</div>
+                <div class="comp-layer comp-layer-mid">Headless Primitives (useDialog, useSelect, useTable)</div>
+                <div class="comp-layer comp-layer-bottom">Styled Components (Button, Modal, DataTable, ...)</div>
+              </div>
+              <div class="diagram-label diagram-sub">3-layer abstraction &middot; teams can consume at any layer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Developer Data Console -->
+      <div class="project-card" data-category="devtools">
+        <div class="project-header">
+          <div class="project-tag">Developer Tools</div>
+          <div class="project-tag">Production</div>
+        </div>
+        <h3 class="project-title">Developer-Facing Data Console</h3>
+        <p class="project-role">Frontend Lead &middot; Next.js &middot; TypeScript &middot; Charts</p>
+        <div class="project-body">
+          <div class="project-desc">
+            <h4>Background</h4>
+            <p>
+              A developer-facing data management console providing CRUD operations, real-time data
+              visualization, batch processing, and an extensible plugin system. Designed as a
+              platform that other teams could build upon.
+            </p>
+            <h4>Key Contributions</h4>
+            <ul>
+              <li>Architected <strong>AppShell framework</strong> with module federation, enabling
+                  teams to plug in custom pages without modifying the core codebase</li>
+              <li>Designed <strong>API adapter layer</strong> abstracting data fetching, caching,
+                  error handling, and retry logic behind a unified interface</li>
+              <li>Built <strong>configurable data table</strong> supporting virtual scrolling,
+                  inline editing, column drag-and-drop, and server-side filtering</li>
+              <li>Implemented <strong>real-time dashboard</strong> with WebSocket data feeds and
+                  ECharts visualization, supporting custom chart composition</li>
+              <li>Established <strong>frontend performance monitoring</strong> with Core Web Vitals
+                  tracking and automated Lighthouse CI</li>
+            </ul>
+            <h4>Impact</h4>
+            <div class="project-metrics">
+              <div class="metric"><strong>5+</strong><span>Teams built on platform</span></div>
+              <div class="metric"><strong>1.1s</strong><span>First contentful paint</span></div>
+              <div class="metric"><strong>0</strong><span>Critical regressions</span></div>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="diagram diagram-console">
+              <div class="diagram-label">AppShell Architecture</div>
+              <div class="console-layout">
+                <div class="console-side">Sidebar Nav</div>
+                <div class="console-main">
+                  <div class="console-bar">Top Bar &middot; Search &middot; User</div>
+                  <div class="console-content">
+                    <div class="console-module">Module A</div>
+                    <div class="console-module">Module B</div>
+                    <div class="console-module">Module C</div>
+                  </div>
+                </div>
+              </div>
+              <div class="diagram-label diagram-sub">Module federation &middot; each team owns their module</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: AI Search Platform -->
+      <div class="project-card" data-category="ai">
+        <div class="project-header">
+          <div class="project-tag tag-accent">AI Frontend</div>
+          <div class="project-tag">Production</div>
+        </div>
+        <h3 class="project-title">AI-Powered Intelligent Search Platform</h3>
+        <p class="project-role">Senior Frontend Engineer &middot; Vue 3 &middot; TypeScript &middot; Elasticsearch</p>
+        <div class="project-body">
+          <div class="project-desc">
+            <h4>Background</h4>
+            <p>
+              An intelligent search platform combining traditional keyword search with AI-powered
+              semantic retrieval. Supports natural language queries, auto-complete suggestions,
+              and dynamic result rendering with mixed content types.
+            </p>
+            <h4>Key Contributions</h4>
+            <ul>
+              <li>Implemented <strong>debounced search with cancelable requests</strong> using AbortController,
+                  reducing unnecessary API calls by 70%</li>
+              <li>Designed <strong>dynamic result renderer</strong> with plugin-based content type system
+                  (text, tables, charts, knowledge cards)</li>
+              <li>Built <strong>search history and bookmark system</strong> with IndexedDB for offline access</li>
+              <li>Optimized <strong>large result set rendering</strong> with windowing and lazy hydration</li>
+              <li>Integrated <strong>real-time search suggestions</strong> using trie-based autocomplete</li>
+            </ul>
+            <h4>Impact</h4>
+            <div class="project-metrics">
+              <div class="metric"><strong>200ms</strong><span>Search response time</span></div>
+              <div class="metric"><strong>70%</strong><span>Reduced API calls</span></div>
+              <div class="metric"><strong>95+</strong><span>Lighthouse score</span></div>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="diagram diagram-search">
+              <div class="diagram-label">Search Pipeline</div>
+              <div class="diagram-flow vertical">
+                <div class="flow-node">Natural Language Query</div>
+                <div class="flow-arrow">&darr;</div>
+                <div class="flow-node flow-highlight">Semantic Parser + Keyword Extractor</div>
+                <div class="flow-arrow">&darr;</div>
+                <div class="flow-node">Elasticsearch + Vector DB</div>
+                <div class="flow-arrow">&darr;</div>
+                <div class="flow-node flow-highlight">Dynamic Result Renderer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Timeline -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Career Timeline</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Dec 2025 — Present</div>
+            <h3 class="timeline-role">Senior Frontend Engineer</h3>
+            <p class="timeline-desc">AI Agent platform frontend, MCP protocol integration, streaming UI architecture</p>
+            <div class="timeline-tech"><span>React</span><span>TypeScript</span><span>Next.js</span><span>SSE</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Mar 2022 — Dec 2025</div>
+            <h3 class="timeline-role">Senior Frontend Engineer &middot; AI Frontend</h3>
+            <p class="timeline-desc">Led AI conversational platform frontend, built LLM integration layer, streaming response architecture</p>
+            <div class="timeline-tech"><span>React</span><span>TypeScript</span><span>WebSocket</span><span>Docker</span><span>K8s</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Jul 2019 — Dec 2021</div>
+            <h3 class="timeline-role">Senior Frontend Engineer</h3>
+            <p class="timeline-desc">Built enterprise component library & design system, CI/CD pipeline, SSR/CSR optimization</p>
+            <div class="timeline-tech"><span>React</span><span>TypeScript</span><span>Storybook</span><span>GitLab CI</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Jun 2018 — Jun 2019</div>
+            <h3 class="timeline-role">Frontend Engineer</h3>
+            <p class="timeline-desc">AI-powered search platform, dynamic result rendering, performance optimization</p>
+            <div class="timeline-tech"><span>Vue 3</span><span>TypeScript</span><span>Elasticsearch</span></div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">Dec 2015 — May 2018</div>
+            <h3 class="timeline-role">Frontend Engineer</h3>
+            <p class="timeline-desc">Online education platform, responsive design, cross-browser compatibility</p>
+            <div class="timeline-tech"><span>JavaScript</span><span>jQuery</span><span>CSS3</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <h2 class="contact-title">Let's Build Something Together</h2>
+        <p class="contact-text">
+          I'm currently open to senior frontend roles — especially in AI applications,
+          developer tools, and platform engineering. Open to China-based and remote positions
+          with reasonable timezone overlap (UTC+6 to UTC+10).
+        </p>
+        <div class="contact-links">
+          <a href="mailto:352579170@qq.com" class="contact-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            352579170@qq.com
+          </a>
+          <a href="https://github.com/RiverThrimp" target="_blank" rel="noopener" class="contact-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            github.com/RiverThrimp
+          </a>
+          <a href="https://www.linkedin.com/in/fengqiang" target="_blank" rel="noopener" class="contact-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+        <div class="contact-location">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          Beijing, China &middot; Open to Singapore / Japan / Remote
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Feng Qiang. Built with HTML, CSS, and vanilla JS — no frameworks, no build step.</p>
+      <p class="footer-sub">Designed and coded from scratch. Deployed via GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
